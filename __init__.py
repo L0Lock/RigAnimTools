@@ -21,33 +21,39 @@ bl_info = {
         "name": "Rigging Tools",
         "description": "A regroupment of little tools to automate redundant and boring rigging tasks (isn't that what programs are made for in the first place ?).",
         "author": "-L0Lock-",
-        "version": (0, 1),
-        "blender": (2, 79),
-        "location": "Pose Mode > Specials Menu",
+        "version": (0, 2),
+        "blender": (2, 80, 0),
+        "location": "Pose Mode > Sidebar > RiggingTools tab",
         "warning": "made by a python noob",
-        "wiki_url": "https://github.com/L0Lock/Blender-Stuff/tree/master/Addons/Rigging_Tools",
-        "tracker_url": "https://github.com/L0Lock/Blender-Stuff/issues",
+        "wiki_url": "https://github.com/L0Lock/RiggingTools",
+        "tracker_url": "https://github.com/L0Lock/RiggingTools/issues",
         "support": "COMMUNITY",
         "category": "Rigging"
         }
 
 import bpy
 
-#
-# Add additional functions here
-#
+from . Reset_Stretch_To import RGT_OT_Reset_Stretch_To
+from . Set_Inverse_Child_Of import RGT_OT_Set_Inverse_Child_Of
 
-def register():
-    from . import Reset_Stretch_To
-    from . import Set_Inverse_Child_Of
-    properties.register()
-    ui.register()
+class VIEW3D_MT_pose_riggingtools(bpy.types.Panel):
+    bl_idname = "POSE_MT_rigging_tools"
+    bl_label = "RiggingTools"
+    bl_category = "RiggingTools"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_context = "posemode"
 
-def unregister():
-    from . import Reset_Stretch_To
-    from . import Set_Inverse_Child_Of
-    properties.unregister()
-    ui.unregister()
 
-if __name__ == '__main__':
-    register()
+    def draw(self, context):
+        layout = self.layout
+
+        layout.operator("view3d.reset_stretch_to")
+        layout.operator("view3d.set_inverse_child_of")
+
+classes = (RGT_OT_Reset_Stretch_To, RGT_OT_Set_Inverse_Child_Of, VIEW3D_MT_pose_riggingtools)
+
+register, unregister = bpy.utils.register_classes_factory(classes)
+
+
+# bpy.ops.script.python_file_run(filepath="")
