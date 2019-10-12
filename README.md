@@ -1,4 +1,7 @@
 # RiggingTools
+
+[![GitHub license](https://img.shields.io/github/license/L0Lock/RiggingTools?style=for-the-badge)](https://github.com/L0Lock/RiggingTools/blob/master/LICENSE.md)
+
 RiggingTools is an add-on for Blender regrouping some little tools I made for myself to automate redundant tasks (isn't that what programs are made for in the first place ?).
 
 # Installation
