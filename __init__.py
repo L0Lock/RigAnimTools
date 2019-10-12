@@ -36,8 +36,8 @@ import bpy
 from . Reset_Stretch_To import RGT_OT_Reset_Stretch_To
 from . Set_Inverse_Child_Of import RGT_OT_Set_Inverse_Child_Of
 
-class VIEW3D_MT_pose_riggingtools(bpy.types.Panel):
-    bl_idname = "POSE_MT_rigging_tools"
+class VIEW3D_PT_pose_riggingtools(bpy.types.Panel):
+    bl_idname = "POSE_PT_rigging_tools"
     bl_label = "RiggingTools"
     bl_category = "RiggingTools"
     bl_space_type = "VIEW_3D"
@@ -51,7 +51,7 @@ class VIEW3D_MT_pose_riggingtools(bpy.types.Panel):
         layout.operator("view3d.reset_stretch_to")
         layout.operator("view3d.set_inverse_child_of")
 
-classes = (RGT_OT_Reset_Stretch_To, RGT_OT_Set_Inverse_Child_Of, VIEW3D_MT_pose_riggingtools)
+classes = (RGT_OT_Reset_Stretch_To, RGT_OT_Set_Inverse_Child_Of, VIEW3D_PT_pose_riggingtools)
 
 register, unregister = bpy.utils.register_classes_factory(classes)
 
