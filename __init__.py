@@ -36,8 +36,11 @@ import bpy
 from . Reset_Stretch_To import RAT_OT_Reset_Stretch_To
 from . Set_Inverse_Child_Of import RAT_OT_Set_Inverse_Child_Of
 
+
+# Drawing Pose tools UI in sidebar
+
 class VIEW3D_PT_pose_riganimtools(bpy.types.Panel):
-    bl_idname = "POSE_PT_rigging_tools"
+    bl_idname = "POSE_PT_riganim_tools"
     bl_label = "RigAnimTools"
     bl_category = "RigAnimTools"
     bl_space_type = "VIEW_3D"
