@@ -19,7 +19,7 @@
 
 import bpy
 
-class RGT_OT_Reset_Stretch_To(bpy.types.Operator):
+class RAT_OT_Reset_Stretch_To(bpy.types.Operator):
 	bl_idname = "view3d.reset_stretch_to"
 	bl_label = "Reset: Stretch To"
 	bl_description = "Resets any \"Stretch To\" constraints"

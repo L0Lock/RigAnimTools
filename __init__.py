@@ -18,28 +18,28 @@
 # ***** END GPL LICENCE BLOCK *****
 
 bl_info = {
-        "name": "Rigging Tools",
-        "description": "A regroupment of little tools to automate redundant and boring rigging tasks (isn't that what programs are made for in the first place ?).",
+        "name": "RigAnim Tools",
+        "description": "A regroupment of little tools to automate redundant and boring tasks (isn't that what programs are made for in the first place ?) or give extra tools, for rigging and animation.",
         "author": "-L0Lock-",
-        "version": (0, 2),
+        "version": (0, 2, 1),
         "blender": (2, 80, 0),
-        "location": "Pose Mode > Sidebar > RiggingTools tab",
+        "location": "Pose Mode > Sidebar > RigAnim Tools tab",
         "warning": "made by a python noob",
-        "wiki_url": "https://github.com/L0Lock/RiggingTools",
-        "tracker_url": "https://github.com/L0Lock/RiggingTools/issues",
+        "wiki_url": "https://github.com/L0Lock/RigAnim Tools",
+        "tracker_url": "https://github.com/L0Lock/RigAnim Tools/issues",
         "support": "COMMUNITY",
         "category": "Rigging"
         }
 
 import bpy
 
-from . Reset_Stretch_To import RGT_OT_Reset_Stretch_To
-from . Set_Inverse_Child_Of import RGT_OT_Set_Inverse_Child_Of
+from . Reset_Stretch_To import RAT_OT_Reset_Stretch_To
+from . Set_Inverse_Child_Of import RAT_OT_Set_Inverse_Child_Of
 
-class VIEW3D_PT_pose_riggingtools(bpy.types.Panel):
+class VIEW3D_PT_pose_riganimtools(bpy.types.Panel):
     bl_idname = "POSE_PT_rigging_tools"
-    bl_label = "RiggingTools"
-    bl_category = "RiggingTools"
+    bl_label = "RigAnimTools"
+    bl_category = "RigAnimTools"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_context = "posemode"
@@ -51,7 +51,7 @@ class VIEW3D_PT_pose_riggingtools(bpy.types.Panel):
         layout.operator("view3d.reset_stretch_to")
         layout.operator("view3d.set_inverse_child_of")
 
-classes = (RGT_OT_Reset_Stretch_To, RGT_OT_Set_Inverse_Child_Of, VIEW3D_PT_pose_riggingtools)
+classes = (RAT_OT_Reset_Stretch_To, RAT_OT_Set_Inverse_Child_Of, VIEW3D_PT_pose_riganimtools)
 
 register, unregister = bpy.utils.register_classes_factory(classes)
 
