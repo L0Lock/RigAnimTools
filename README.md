@@ -1,8 +1,8 @@
-# RiggingTools
+# RigAnim Tools
 
-[![GitHub license](https://img.shields.io/github/license/L0Lock/RiggingTools?style=for-the-badge)](https://github.com/L0Lock/RiggingTools/blob/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/github/license/L0Lock/RigAnimTools?style=for-the-badge)](https://github.com/L0Lock/RigAnimTools/blob/master/LICENSE.md)
 
-RiggingTools is an add-on for Blender regrouping some little tools I made for myself to automate redundant tasks (isn't that what programs are made for in the first place ?).
+RigAnim Tools (or RAT) is a regroupment of little tools to automate redundant and boring tasks (isn't that what programs are made for in the first place ?) or make your life easyier, for rigging and animation.
 
 # Installation
 - Download this repository using the big green button on the top-right corned of this page. You will obtain a .zip file.

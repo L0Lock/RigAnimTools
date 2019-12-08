@@ -25,8 +25,8 @@ bl_info = {
         "blender": (2, 80, 0),
         "location": "Pose Mode > Sidebar > RigAnim Tools tab",
         "warning": "made by a python noob",
-        "wiki_url": "https://github.com/L0Lock/RigAnim Tools",
-        "tracker_url": "https://github.com/L0Lock/RigAnim Tools/issues",
+        "wiki_url": "https://github.com/L0Lock/RigAnimTools",
+        "tracker_url": "https://github.com/L0Lock/RigAnimTools/issues",
         "support": "COMMUNITY",
         "category": "Rigging"
         }
