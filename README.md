@@ -5,7 +5,7 @@
 RigAnim Tools (or RAT) is a regroupment of little tools to automate redundant and boring tasks (isn't that what programs are made for in the first place ?) or make your life easyier, for rigging and animation.
 
 # Installation
-- Download this repository using the big green button on the top-right corned of this page. You will obtain a .zip file.
+- Download the latset release on [the release page](https://github.com/L0Lock/RigAnimTools/releases), or download the entire repository using the big green button on the top-right corned of this page. You will obtain an archive file (usually `.zip` or `.7z`).
 - In Blender, go to Edit → Preferences, then in the Add-ons tab click the Install button an navigate to the downloaded .zip and double-click it
 - Enable the addon via its checkbox on the top-left corner.
 
