@@ -16,6 +16,16 @@ You will find the addon's content in the viewport's sidebar while in pose mode:
 # List of tools
 **Reset: Stretch To**
 In pose mode, resets every "Stretch To" constraint in the armature.
+>**From the [Blender Manual](https://docs.blender.org/manual/en/latest/animation/constraints/relationship/child_of.html?highlight=set%20inverse#options)**:
+>[This] will recalculate the Rest Length value, so that it corresponds to the actual distance between the owner and its target (i.e. the distance before this constraint is applied).
 
 **Set Inverse: Child Of**
  In pose mode, sets the inverse of every "Child Of" constraint in the armature.
+>**From the [Blender Manual](https://docs.blender.org/manual/en/latest/animation/constraints/relationship/child_of.html?highlight=set%20inverse#options)**:
+>By default, when you parent your owner to your target, the target becomes the origin of the owner’s space. This means that the location, rotation and scale of the owner are offset by the same properties of the target. In other words, the owner is transformed when you parent it to your target. This might not be desired! So, if you want to restore your owner to its before-parenting state, click on the Set Inverse button.
+
+
+**Clear Inverse: Child Of**
+ In pose mode, clears the inverse of every "Child Of" constraint in the armature.
+>**From the [Blender Manual](https://docs.blender.org/manual/en/latest/animation/constraints/relationship/child_of.html?highlight=set%20inverse#options)**:
+>This button reverses (cancels) the effects of the above one, restoring the owner/child to its default state regarding its target/parent.
