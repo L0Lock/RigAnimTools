@@ -21,7 +21,7 @@ bl_info = {
         "name": "RigAnim Tools",
         "description": "A regroupment of little tools to automate redundant and boring tasks (isn't that what programs are made for in the first place ?) or give extra tools, for rigging and animation.",
         "author": "-L0Lock-",
-        "version": (0, 2, 1),
+        "version": (0, 2, 2),
         "blender": (2, 80, 0),
         "location": "Pose Mode > Sidebar > RigAnim Tools tab",
         "warning": "made by a python noob",
@@ -35,6 +35,7 @@ import bpy
 
 from . Reset_Stretch_To import RAT_OT_Reset_Stretch_To
 from . Set_Inverse_Child_Of import RAT_OT_Set_Inverse_Child_Of
+from . Clear_Inverse_Child_Of import RAT_OT_Clear_Inverse_Child_Of
 
 
 # Drawing Pose tools UI in sidebar
@@ -53,8 +54,9 @@ class VIEW3D_PT_pose_riganimtools(bpy.types.Panel):
 
         layout.operator("view3d.reset_stretch_to")
         layout.operator("view3d.set_inverse_child_of")
+        layout.operator("view3d.clear_inverse_child_of")
 
-classes = (RAT_OT_Reset_Stretch_To, RAT_OT_Set_Inverse_Child_Of, VIEW3D_PT_pose_riganimtools)
+classes = (RAT_OT_Reset_Stretch_To, RAT_OT_Set_Inverse_Child_Of, RAT_OT_Clear_Inverse_Child_Of, VIEW3D_PT_pose_riganimtools)
 
 register, unregister = bpy.utils.register_classes_factory(classes)
 
