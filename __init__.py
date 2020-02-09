@@ -33,9 +33,9 @@ bl_info = {
 
 import bpy
 
-from . Reset_Stretch_To import RAT_OT_Reset_Stretch_To
-from . Set_Inverse_Child_Of import RAT_OT_Set_Inverse_Child_Of
-from . Clear_Inverse_Child_Of import RAT_OT_Clear_Inverse_Child_Of
+from . RAT_OT_Reset_Stretch_To import RAT_OT_Reset_Stretch_To
+from . RAT_OT_Set_Inverse_Child_Of import RAT_OT_Set_Inverse_Child_Of
+from . RAT_OT_Clear_Inverse_Child_Of import RAT_OT_Clear_Inverse_Child_Of
 
 
 # Drawing Pose tools UI in sidebar
